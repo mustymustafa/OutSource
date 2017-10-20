@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Official Site of OutSource"/>
+        <meta name="title" content="Outsource_Home"/>
+        <meta name="subject" content="Freelancers, Work, Hire, Register, Outsource Tasks, Outsource Jobs"/>
+        <title>Welcome to Outsource</title>
+        <link href="styles/all.css" rel="stylesheet"/>
+        <link href="styles/welcome.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="top" itemscope itemtype="http://www.outsource.com">
+            <div id="visible">
+                <div id="logo">
+                    <a title="Home" href="welcome.html" itemprop="home">
+                       <img src="images/icons/logo.png" alt="Outsource Logo">
+                    </a>
+                </div>
+                <div id="user">
+                    <button title="Login" onclick="show('menu');" itemprop="user">
+                        <img src="images/icons/usr.png">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="menu" class="hidden">
+            <div id="login" class="">
+                <form>
+                    <nav>
+                        <ul id="login_items">
+                            <li title="Username">
+                                <input type="text" id="username" name="name" required aria-required="true" placeholder="Username" autofocus>
+                            </li>
+                            <li title="Password">  
+                                <input type="password" id="password" name="password" required aria-required="true" placeholder="Password">
+                            </li>
+                            <li>
+                                <input type="submit" title="Login" id="user_login" value="Login" action="./scripts/login.php">
+                            </li>
+                        </ul>
+                    </nav>
+                </form>
+                <p id="new_here">New Here?<a href="sign_up.html" title="Sign Up"> Sign Up</a></p>
+            </div>
+            <div id="logged_in" class="hidden">
+                <ul id="logged_in_items" itemtype="http://www.hoef.com">
+                    <li><a title="Home" href="home.html" itemprop="home">Home</a></li>
+                    <li><a title="Sign Up" href="sign_up.html" itemprop="sign_up">Sign Up</a></li>
+                    <li><a title="Login" href="login.html" itemprop="login">Login</a></li>
+                    <li><a title="Gallery" href="gallery.html" itemprop="gallery">Gallery</a></li>
+                    <li><a title="Contact Us" href="contact.html" itemprop="contact_us">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <article id="welcome" onclick="hide('menu');">
+            <header>Welome to Outsource</header>
+        </article>
+	   <div id="where_to" onclick="hide('menu');">         
+            <article id="work">
+                <a href="sign_up.html" title="Register as a Freelancer"><header>I Want To Work</header></a>
+                <section>Register as a Freelancer</section>
+            </article>
+            <article id="outsource">
+                <a href="freelancers.html" title="Hire a Freelancer"><header>I Want To Outsource</header></a>
+                <section>Hire a Freelancer</section>
+            </article>  
+            <article id="new_here">
+                <a href="about.html" title="What is Outsource?"><header>I'm New Here</header></a>
+                <section>What is Outsource?</section>
+            </article>        
+    	</div>
+        <div id="extras" onclick="hide('menu');">
+        </div>
+    	<footer onclick="hide('menu');">
+            <p>&copy; 2017 DRAM Technologies. All rights reserved.</p>
+    	</footer>
+    </body>
+</html>
+        

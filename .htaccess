@@ -1,0 +1,9 @@
+AddType text/cache-manifest .manifest
+AddType video/ogg .ogv 
+AddType video/mp4 .mp4
+AddType video/webm .webm
+
+<Files hoef_cache.appcache>
+    ExpiresActive On
+    ExpiresDefault "access"
+</Files>
