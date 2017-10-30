@@ -1,0 +1,138 @@
+<% include partials/header%>
+<style>
+.jumbotron, footer {background:linear-gradient(#000080, #00bfff);}
+
+
+
+.jumbotron h1, .jumbotron p {color:#fff;}
+
+
+
+.jumbotron p {margin-bottom:2em;}
+
+.jumbotron h1 {margin-top:-.3em;}
+
+
+
+a {text-decoration:none;}
+
+li {list-style:none;}
+
+
+
+#menu_pane {margin-bottom:-2em;}
+
+#menu_pane a {font-size:1.3em; color:#fff; text-decoration:none;}
+
+#menu_pane a:hover {text-shadow:0 0 .07em #fff;}
+
+
+
+#main_item {
+
+	height:20vw; color:#707070; transition:color, background .5s; border-radius:.5em;
+
+	text-align:center;
+
+}
+
+#main_item:hover {background-color:#00bfff; color:#fff;}
+
+
+
+#main_item h3 {font-size:2em; font-weight:bold;}
+
+#main_item h4 {font-size:1.5em;}
+
+#main_item p {font-size:1.2em;}
+
+
+
+#main {margin-top:3em;}
+
+
+
+footer {
+
+	display:flex; justify-content:center; align-items:center; margin-top:2em;
+
+	background:linear-gradient(#000080, #00bfff); padding-bottom:.2em; padding-top:.2em;
+
+	text-align:center; height:5em;
+
+}
+
+footer p {font:1.3em "Helvetica"; color:#fff;}
+</style>
+<body>
+
+    <div class="jumbotron text-center">
+
+      <h1>Welcome to Outsource</h1>
+
+      <p>Service on Demand</p>
+
+     
+
+    </div>   
+
+    <div class="container" id="main">
+
+      <div class="row">
+
+        <a title="Register as a Freelancer" href="/register">
+
+          <div class="col-sm-4" id="main_item">  
+
+            <h3>I Want to Work</h3>
+
+            <h4>Register as a Freelancer.</h4>
+
+            <p>Post your services. Get hired.</p>
+
+          </div>
+
+        </a>
+
+        <a title="Hire a Freelancer" href="/employer">
+
+          <div class="col-sm-4" id="main_item"> 
+
+            <h3>I Want to Outsource</h3>
+
+            <h4>Hire a Freelancer.</h4>
+
+            <p>Get the job done, on demand.</p>
+
+          </div>
+
+        </a>
+
+        <a title="Learn more about Outsource" href="sign-up.html">
+
+          <div class="col-sm-4" id="main_item">
+
+            <h3>What is Outsource?</h3>        
+
+            <h4>Our history. Our mission. Our vision.</h4>
+
+            <p>Get your tasks done, on demand.</p>
+
+          </div>
+
+        </a>
+
+      </div>
+
+    </div>
+
+    <footer class="row">
+
+      <p><b>Developed by Musty Mustafa</b></p>
+
+    </footer>
+
+  </body>
+
+</html>
+

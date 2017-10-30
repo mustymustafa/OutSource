@@ -1,0 +1,30 @@
+<% include partials/header %>
+<div class="container">
+     <header class="jumbotron">
+         <div class="container">
+             <h1>Welcome To OutSourceNg</h1>
+             <p>OutSource Variety of Jobs</p>
+         </div>
+     </header>
+     
+     <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+
+        <% jobs.forEach(function(job){ %>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail">
+                  <h2><a href = "/employer/<%= job._id%>"> <%= job.name %> </a></h2>
+
+                   <div class="caption">
+                       <h4><b>Price Range( ₦):</b><%= job.price%></h4>
+                   </div>
+                   
+                   <p>
+                   <a href = "/employer/<%= job._id%>" class =  "btn btn-primary"> More info </a>
+                   </p>
+                   
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+
